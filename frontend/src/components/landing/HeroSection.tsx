@@ -81,7 +81,7 @@ export function HeroSection({ isAuthenticated }: HeroSectionProps) {
             transition={{ delay: 0.45 }}
             className="mt-10 text-xs uppercase tracking-wide text-slate-500"
           >
-            23 detection rules · 3 scan types · real-time browser protection · built for a Phishing Detection System thesis
+            31 detection rules · 3 scan types · real-time browser protection · built for a Phishing Detection System thesis
           </motion.p>
         </div>
 

@@ -5,7 +5,7 @@ import { AnimatedCounter } from "@/components/landing/AnimatedCounter";
 const STATS = [
   { value: 3.4, decimals: 1, prefix: "", suffix: "B+", label: "Phishing emails sent daily worldwide" },
   { value: 94, decimals: 0, prefix: "", suffix: "%", label: "Of breaches start with a phishing email" },
-  { value: 23, decimals: 0, prefix: "", suffix: "", label: "Built-in detection rules across the URL & Email engines" },
+  { value: 31, decimals: 0, prefix: "", suffix: "", label: "Built-in detection rules across URL, Email & QR engines" },
   { value: 1, decimals: 0, prefix: "<", suffix: "s", label: "Typical CyberShield scan time" },
 ];
 
