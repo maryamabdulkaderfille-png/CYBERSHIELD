@@ -163,6 +163,40 @@ export function QrScannerPage() {
             )}
           </div>
 
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-white/5">
+            <span className="text-xs text-slate-500">Try demo:</span>
+            <button
+              type="button"
+              onClick={async () => {
+                try {
+                  const res = await fetch("/sample_safe_qr.png");
+                  const blob = await res.blob();
+                  handleFile(new File([blob], "safe_sample.png", { type: "image/png" }));
+                } catch {
+                  setError("Could not load sample QR code.");
+                }
+              }}
+              className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+            >
+              🟢 Try Safe QR
+            </button>
+            <button
+              type="button"
+              onClick={async () => {
+                try {
+                  const res = await fetch("/sample_dangerous_qr.png");
+                  const blob = await res.blob();
+                  handleFile(new File([blob], "phishing_sample.png", { type: "image/png" }));
+                } catch {
+                  setError("Could not load sample QR code.");
+                }
+              }}
+              className="rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-medium text-red-400 hover:bg-red-500/20 transition-colors"
+            >
+              🔴 Try Dangerous QR
+            </button>
+          </div>
+
           <p className="flex items-center gap-1.5 text-xs text-slate-600">
             <ClipboardIcon size={12} />
             Tip: copy a QR image and press Ctrl/Cmd+V anywhere on this page

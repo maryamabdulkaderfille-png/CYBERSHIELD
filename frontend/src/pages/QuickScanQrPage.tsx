@@ -90,6 +90,17 @@ export function QuickScanQrPage() {
     if (cameraInputRef.current) cameraInputRef.current.value = "";
   };
 
+  const handleSampleQr = async (samplePath: string, fileName: string) => {
+    try {
+      const res = await fetch(samplePath);
+      const blob = await res.blob();
+      const file = new File([blob], fileName, { type: "image/png" });
+      handleFile(file);
+    } catch {
+      setError("Could not load sample QR code.");
+    }
+  };
+
   return (
     <div className="mx-auto max-w-4xl px-6 py-16">
       <Link to="/quick-scan" className="text-xs font-medium text-slate-500 hover:text-slate-300">
@@ -146,6 +157,24 @@ export function QuickScanQrPage() {
                 Clear
               </button>
             )}
+          </div>
+
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-white/5">
+            <span className="text-xs text-slate-500">Try demo:</span>
+            <button
+              type="button"
+              onClick={() => handleSampleQr("/sample_safe_qr.png", "safe_sample.png")}
+              className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+            >
+              🟢 Try Safe QR
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSampleQr("/sample_dangerous_qr.png", "phishing_sample.png")}
+              className="rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-medium text-red-400 hover:bg-red-500/20 transition-colors"
+            >
+              🔴 Try Dangerous QR
+            </button>
           </div>
 
           <p className="flex items-center gap-1.5 text-xs text-slate-600">
