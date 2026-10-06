@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberShield Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <img src="../../icons/icon48.png" alt="" width="32" height="32" />
+        <div>
+          <h1>CyberShield Extension Settings</h1>
+          <p>Configure how real-time protection behaves in this browser.</p>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2>Protection</h2>
+
+        <label class="row">
+          <div>
+            <span class="row-title">Enable Protection</span>
+            <span class="row-desc">Master switch for all real-time scanning.</span>
+          </div>
+          <input type="checkbox" id="protectionEnabled" />
+        </label>
+
+        <label class="row">
+          <div>
+            <span class="row-title">Auto Scan</span>
+            <span class="row-desc">Automatically check every page you visit.</span>
+          </div>
+          <input type="checkbox" id="autoScan" />
+        </label>
+
+        <label class="row">
+          <div>
+            <span class="row-title">Danger Threshold</span>
+            <span class="row-desc">Trust scores at or below this are treated as blocking-warning territory.</span>
+          </div>
+          <div class="threshold-control">
+            <input type="range" id="dangerThreshold" min="0" max="100" step="1" />
+            <span id="dangerThresholdValue">39</span>
+          </div>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Notifications</h2>
+        <label class="row">
+          <div>
+            <span class="row-title">Enable Notifications</span>
+            <span class="row-desc">Get notified about dangerous sites, suspicious sites, and scan failures.</span>
+          </div>
+          <input type="checkbox" id="notifications" />
+        </label>
+
+        <label class="row">
+          <div>
+            <span class="row-title">Play Alert Sound</span>
+            <span class="row-desc">Play a short alarm sound in the browser tab when a dangerous website is blocked.</span>
+          </div>
+          <input type="checkbox" id="soundAlerts" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+        <label class="row">
+          <div>
+            <span class="row-title">Privacy Mode</span>
+            <span class="row-desc">
+              Scans still run, but nothing is saved to your CyberShield account or scan history —
+              nothing is logged anywhere on this device or the server.
+            </span>
+          </div>
+          <input type="checkbox" id="privacyMode" />
+        </label>
+
+        <label class="row">
+          <div>
+            <span class="row-title">Statistics Collection</span>
+            <span class="row-desc">Keep local counters (scans run, threats blocked) shown on this page. Stored only on this device.</span>
+          </div>
+          <input type="checkbox" id="statisticsCollection" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Appearance</h2>
+        <label class="row">
+          <div>
+            <span class="row-title">Theme</span>
+          </div>
+          <select id="theme">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+            <option value="system">System</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Connection</h2>
+        <label class="row row-stacked">
+          <span class="row-title">CyberShield API URL</span>
+          <input type="url" id="apiBaseUrl" placeholder="http://localhost:5000/api/v1" />
+        </label>
+        <label class="row row-stacked">
+          <span class="row-title">CyberShield Dashboard URL</span>
+          <input type="url" id="dashboardBaseUrl" placeholder="http://localhost:5173" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Local Statistics</h2>
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat"><span class="stat-value" id="statTotal">0</span><span class="stat-label">Scans</span></div>
+          <div class="stat"><span class="stat-value" id="statDangerous">0</span><span class="stat-label">Dangerous blocked</span></div>
+          <div class="stat"><span class="stat-value" id="statSuspicious">0</span><span class="stat-label">Suspicious warned</span></div>
+          <div class="stat"><span class="stat-value" id="statFailed">0</span><span class="stat-label">Failed scans</span></div>
+        </div>
+      </section>
+
+      <div class="save-bar">
+        <span class="save-status" id="saveStatus"></span>
+        <button class="btn btn-primary" id="btnSave">Save Settings</button>
+      </div>
+    </div>
+
+    <script src="../shared/browser-api.js"></script>
+    <script src="../shared/constants.js"></script>
+    <script src="../shared/storage.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

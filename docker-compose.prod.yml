@@ -1,0 +1,67 @@
+# Production compose file — see the README's "Deployment (production)"
+# section for the full walkthrough. Key differences from docker-compose.yml
+# (development):
+#   - Builds Dockerfile.prod for both services (gunicorn + nginx, no dev
+#     servers, no bind-mounted source, no --debug).
+#   - FLASK_ENV=production (secure cookies, no debug logging).
+#   - No source volume mounts — the image is the deployable artifact.
+#   - Migrations are a separate explicit command, never run implicitly.
+#
+# This file is NOT wired up to actually deploy anywhere — it's a reviewed,
+# ready-to-use starting point (per this phase's "prepare, do not deploy"
+# scope). Adjust ports/secrets/volumes for your real target environment
+# before using it against a real server.
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - cybershield_pgdata_prod:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    # Deliberately no published port — only the backend container needs to
+    # reach Postgres, on the internal compose network.
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.prod
+    restart: unless-stopped
+    env_file: .env.production
+    environment:
+      FLASK_ENV: production
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+    ports:
+      - "${BACKEND_PORT:-5000}:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:5000/health', timeout=3).status == 200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.prod
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-5173}:5173"
+    depends_on:
+      - backend
+
+volumes:
+  cybershield_pgdata_prod:

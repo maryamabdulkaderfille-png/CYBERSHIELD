@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Tells the browser to render native controls (select dropdowns,
+       checkboxes, scrollbars) with a dark palette by default — without
+       this, the <option> popup for elements like the language/timezone
+       selects renders with a browser-default white background while our
+       CSS still gives the option text a light color, making it unreadable. */
+    color-scheme: dark;
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  /* Catch-all for prefers-reduced-motion covering plain CSS/Tailwind
+     animations (e.g. the animate-pulse-slow utility) and transitions —
+     framer-motion's own MotionConfig[reducedMotion="user"] (see main.tsx)
+     only covers motion.* components, not raw CSS keyframes, so this closes
+     the gap for everything else on the page. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    background-color: #05070d;
+    background-image: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.12), transparent 40%),
+      radial-gradient(circle at 80% 0%, rgba(34, 211, 238, 0.1), transparent 40%);
+    background-attachment: fixed;
+  }
+
+  /* Light theme: CyberShield's screens were built against one fixed dark
+     palette (colors hardcoded per-component), so this covers only the
+     shared primitives below rather than re-skinning every page — see
+     lib/theme.ts for the scope decision. */
+  :root[data-theme="light"] body {
+    background-color: #f4f6fb;
+    background-image: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.08), transparent 40%),
+      radial-gradient(circle at 80% 0%, rgba(34, 211, 238, 0.06), transparent 40%);
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.35);
+  }
+
+  /* Every interactive element gets a visible keyboard-focus ring by default —
+     mouse/touch interaction is unaffected since this only fires for
+     :focus-visible (keyboard/programmatic focus), not :focus from a click. */
+  :focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  a,
+  button {
+    outline-color: #22d3ee;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.4);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply relative rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+
+  .glass-card {
+    @apply glass-panel shadow-[0_8px_32px_rgba(0,0,0,0.35)] transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-white/20 bg-white/[0.06];
+  }
+
+  :root[data-theme="light"] .glass-panel {
+    @apply border-slate-900/10 bg-white/70;
+  }
+
+  :root[data-theme="light"] .glass-card:hover {
+    @apply border-slate-900/20 bg-white/90;
+  }
+
+  :root[data-theme="light"] .input-field {
+    @apply border-slate-900/10 bg-white text-slate-900 placeholder:text-slate-400;
+  }
+
+  :root[data-theme="light"] .btn-secondary {
+    @apply border-slate-900/15 bg-white text-slate-800 hover:border-slate-900/25 hover:bg-slate-50;
+  }
+
+  /* Every top-level scope light-theme colors need to reach: public/landing
+     pages, the authenticated dashboard, admin, and .popover-panel (portaled
+     dropdowns — see below, outside the DOM tree of the other three).
+     Previously this was scoped to .app-shell/.dashboard-chrome only, which
+     is why the landing page stayed dark-on-dark in light mode — .public-shell
+     (added to PublicLayout) and :is() below close that gap in one place
+     instead of repeating every selector per scope. */
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-50 {
+    color: #0f172a;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-100 {
+    color: #1e293b;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-200 {
+    color: #334155;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-300 {
+    color: #475569;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-400 {
+    color: #64748b;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-500 {
+    color: #475569;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .text-slate-600 {
+    color: #64748b;
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) .hover\:text-slate-100:hover {
+    color: #1e293b;
+  }
+
+  /* The sidebar/topbar chrome itself (aside/header backgrounds) and the
+     shell wrapper behind them. */
+  :root[data-theme="light"] .dashboard-chrome {
+    @apply border-slate-900/10 bg-white/80;
+  }
+  :root[data-theme="light"] .app-shell {
+    background-color: transparent;
+  }
+
+  /* Plain-white nav-link hover (the one spot that uses bare text-white,
+     not a solid-color button background) — everywhere else text-white sits
+     on a solid brand/danger button background, where it's correctly
+     readable in both themes already and must NOT be touched here. */
+  :root[data-theme="light"] .public-shell .hover\:text-white:hover {
+    color: #0f172a;
+  }
+
+  /* Subtle "glass" overlays (borders/backgrounds/dividers built from
+     white at low opacity, for highlights on the dark palette) need the
+     opposite tint — a faint dark overlay — once the page itself is light.
+     Matched by attribute selector on the literal Tailwind class token
+     (safe for arbitrary-value classes like bg-white/[0.03] without needing
+     to hand-escape the generated selector) rather than re-scoping every
+     component individually. */
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="border-white/5"] {
+    border-color: rgb(15 23 42 / 0.05);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="border-white/10"] {
+    border-color: rgb(15 23 42 / 0.1);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="border-white/15"] {
+    border-color: rgb(15 23 42 / 0.15);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="border-white/20"] {
+    border-color: rgb(15 23 42 / 0.2);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="border-white/25"] {
+    border-color: rgb(15 23 42 / 0.25);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="bg-white/[0.02]"] {
+    background-color: rgb(15 23 42 / 0.02);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="bg-white/[0.03]"] {
+    background-color: rgb(15 23 42 / 0.03);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="bg-white/5"] {
+    background-color: rgb(15 23 42 / 0.05);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="bg-white/10"] {
+    background-color: rgb(15 23 42 / 0.1);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="text-white/5"] {
+    color: rgb(15 23 42 / 0.05);
+  }
+  :root[data-theme="light"] :is(.public-shell, .app-shell main, .dashboard-chrome, .popover-panel) [class~="divide-white/5"] > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgb(15 23 42 / 0.05);
+  }
+
+  /* Landing-page video-background sections (Hero, Overview, Stats) darken
+     their background video/pattern with a translucent bg-navy-950/NN
+     overlay so white text stays readable in dark mode. That overlay is
+     unconditionally dark, so in light mode it was leaving light-theme text
+     (now correctly dark, per the .text-slate-* rules above) sitting on a
+     still-dark backdrop — nearly invisible, and the original reported bug.
+     The video/graphic itself is untouched (still playing, still visible)
+     — only the tint over it flips to match the page. */
+  :root[data-theme="light"] .public-shell [class~="bg-navy-900/70"],
+  :root[data-theme="light"] .public-shell [class~="bg-navy-950/50"],
+  :root[data-theme="light"] .public-shell [class~="bg-navy-950/60"],
+  :root[data-theme="light"] .public-shell [class~="bg-navy-950/70"],
+  :root[data-theme="light"] .public-shell [class~="bg-navy-950/75"],
+  :root[data-theme="light"] .public-shell [class~="bg-navy-950/80"] {
+    background-color: rgb(244 246 251 / 0.9);
+  }
+
+  /* Dropdowns/popovers (Select.tsx, NotificationBell.tsx) are portaled
+     directly to <body> for stacking-context reasons, so they sit outside
+     the DOM tree of every scope above — .popover-panel carries its own
+     light/dark pair independent of ancestry, and is also included in the
+     :is() groups above so its own contents (option text, dividers, etc.)
+     get the same treatment. */
+  .popover-panel {
+    @apply border border-white/10 bg-navy-950/95 backdrop-blur-xl;
+  }
+  :root[data-theme="light"] .popover-panel {
+    @apply border-slate-900/10 bg-white/95;
+  }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium text-slate-400 transition-colors hover:bg-white/[0.04] hover:text-slate-100;
+  }
+  .sidebar-link-active {
+    @apply bg-white/[0.08] text-white;
+  }
+  :root[data-theme="light"] .sidebar-link:hover {
+    @apply bg-slate-900/5 text-slate-900;
+  }
+  :root[data-theme="light"] .sidebar-link-active {
+    @apply bg-slate-900/10 text-slate-900;
+  }
+
+  .brand-gradient-text {
+    @apply bg-gradient-to-r from-brand-cyan to-brand-blue bg-clip-text text-transparent;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-slate-100
+      placeholder:text-slate-500 outline-none transition-colors duration-200
+      focus:border-brand-cyan/60 focus:bg-white/[0.06] focus:ring-2 focus:ring-brand-cyan/20;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-cyan
+      px-5 py-2.5 text-sm font-semibold text-navy-950 shadow-glow transition-all duration-200
+      hover:brightness-110 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.03]
+      px-5 py-2.5 text-sm font-semibold text-slate-100 transition-all duration-200
+      hover:border-white/25 hover:bg-white/[0.08] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .brand-gradient-text {
+    @apply bg-gradient-to-r from-brand-cyan to-brand-blue bg-clip-text text-transparent;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-slate-100
+      placeholder:text-slate-500 outline-none transition-colors duration-200
+      focus:border-brand-cyan/60 focus:bg-white/[0.06] focus:ring-2 focus:ring-brand-cyan/20;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-cyan
+      px-5 py-2.5 text-sm font-semibold text-navy-950 shadow-glow transition-all duration-200
+      hover:brightness-110 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/[0.03]
+      px-5 py-2.5 text-sm font-semibold text-slate-100 transition-all duration-200
+      hover:border-white/25 hover:bg-white/[0.08] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+  }
+}

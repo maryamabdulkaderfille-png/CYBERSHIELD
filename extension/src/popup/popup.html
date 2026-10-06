@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberShield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <img src="../../icons/icon32.png" alt="" width="20" height="20" />
+          <span>Cyber<b>Shield</b></span>
+        </div>
+        <div class="conn" id="connStatus" title="Connection status">
+          <span class="conn-dot"></span>
+          <span class="conn-label">Online</span>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="state state-loading" id="stateLoading">
+          <div class="spinner"></div>
+          <p>Checking this page…</p>
+        </div>
+
+        <div class="state state-hidden" id="stateSignedOut">
+          <p class="state-title">Sign in required</p>
+          <p class="state-desc">Log in to CyberShield in your browser to enable real-time protection.</p>
+          <button class="btn btn-primary" id="btnSignIn">Open CyberShield</button>
+        </div>
+
+        <div class="state state-hidden" id="stateUnscannable">
+          <p class="state-title">Nothing to scan here</p>
+          <p class="state-desc">Browser and extension pages aren't checked by CyberShield.</p>
+        </div>
+
+        <div class="state state-hidden" id="stateError">
+          <p class="state-title">Couldn't check this page</p>
+          <p class="state-desc" id="errorMessage">An unknown error occurred.</p>
+          <button class="btn btn-secondary" id="btnRetryError">Try Again</button>
+        </div>
+
+        <div class="state state-hidden" id="stateBlocked">
+          <p class="state-title">🛡️ Access Blocked</p>
+          <p class="state-desc">
+            <span id="blockedHost"></span> is on your Personal Block List
+            (<span id="blockedScore"></span>/100<span id="blockedReasonWrap">, <span id="blockedReason"></span></span>).
+          </p>
+          <button class="btn btn-secondary" id="btnUnblock">Remove From Block List</button>
+          <p class="state-desc" id="unblockError" style="display:none; color: #ef4444;"></p>
+        </div>
+
+        <div class="state state-hidden state-result" id="stateResult">
+          <div class="site-row">
+            <span class="site-host" id="siteHost" title=""></span>
+          </div>
+
+          <div class="score-panel">
+            <div class="gauge" id="gauge">
+              <svg viewBox="0 0 120 120" width="104" height="104">
+                <circle cx="60" cy="60" r="52" class="gauge-track" />
+                <circle cx="60" cy="60" r="52" class="gauge-value" id="gaugeCircle" />
+              </svg>
+              <div class="gauge-text">
+                <span id="scoreValue">–</span>
+                <small>/ 100</small>
+              </div>
+            </div>
+            <div class="score-meta">
+              <span class="badge" id="riskBadge">—</span>
+              <span class="scan-time" id="scanTime"></span>
+            </div>
+          </div>
+
+          <section class="section" id="reasonsSection">
+            <h2>Reasons</h2>
+            <ul id="reasonsList"></ul>
+          </section>
+
+          <section class="section" id="recommendationsSection">
+            <h2>Recommendations</h2>
+            <ul id="recommendationsList"></ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="quick-actions">
+        <button class="qa-btn" id="btnDashboard" title="Open Dashboard">
+          <span class="qa-icon">🏠</span>
+          <span>Dashboard</span>
+        </button>
+        <button class="qa-btn" id="btnReport" title="View Full Report">
+          <span class="qa-icon">📄</span>
+          <span>Report</span>
+        </button>
+        <button class="qa-btn" id="btnRescan" title="Rescan">
+          <span class="qa-icon">🔄</span>
+          <span>Rescan</span>
+        </button>
+        <button class="qa-btn" id="btnSettings" title="Settings">
+          <span class="qa-icon">⚙️</span>
+          <span>Settings</span>
+        </button>
+      </footer>
+    </div>
+
+    <script src="../shared/browser-api.js"></script>
+    <script src="../shared/constants.js"></script>
+    <script src="../shared/storage.js"></script>
+    <script src="../shared/api-client.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

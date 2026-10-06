@@ -1,0 +1,303 @@
+url,true_label,trust_score,risk_level,predicted_phishing_lenient,predicted_phishing_strict,wrong_under_lenient,wrong_under_strict,had_network_failure,triggered_rules
+https://schtrekh.de/img/,phishing,95,Safe,False,False,True,True,True,ssl_certificate
+http://www.900599.cc/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://farren.webdesignla.info/ga/click/2-115159033-1585-17249-33739-18616-2212d2c02a-1b10dc49b9,phishing,87,Low Risk,False,False,True,True,False,url_length;domain_age
+https://brayden-15.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://ch-pak-informations.bolt.host/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://jdbdkdbsosu.blogspot.com/?m=1,phishing,100,Safe,False,False,True,True,False,
+http://www.adsbot2-eauj.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://proxy-test-001.pages.dev/mac-mini-2023-service-program-for-no-power-issu,phishing,92,Safe,False,False,True,True,False,url_length
+http://ei1i7-qqt-v6l4-2qu9k-08-09-2026-hh.pages.dev/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+http://coinbse-extesnsion.framer.website/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://real-facebook.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.facebook.sagers.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://specbiispaid.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://shop.topup-diamonds.com/?ttclid=E_C_P_CsIBWAuzSx5M-LcGpUyYbB5MLgmo90_kjrM9DdlhAqSwqKMCX9CXTX2hnzI3_fO1u1rmjZpoboyyv5l86Wgi1PrlkTFFSCkWjYZla1IxTKeo0d2L4MTsGQBx24MeaQKGZezG6x1Igohh_snycHRiFHB3mLMbEpptCnc2PwtOQcy-1HTk9W2KinKpzrGWDFBZoOxO8FvN3RNkQtYej-_XhE3lL3vU3HBz_xP7T3Hp-1MTaUIafiv6LyEY3qLa32N8v21yJGgSBHYyLjA,phishing,80,Low Risk,False,False,True,True,False,url_length;domain_age
+http://vfxzn-8zg-3ff3-36yv7-13-09-2026-hh.pages.dev/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+https://www.trustwallet-secure-check.vercel.app/,phishing,64,Suspicious,True,False,False,True,False,ssl_certificate;suspicious_keywords;redirect_check
+http://ledgarapp.onlinedocsfilesreport.com/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+https://8s7q0g-qw999agreg-mbtz2x8p1m9-fsgc.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+http://zealous-dialects-588703.framer.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://paycore-trust-process.sbs/viewer/bWlsbGVubml1bQ/Ml8w/94BG6ZqQ24,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://netflix-renovacion-pago.com/captcha,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://netflix-renovacion-pago.com/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://comcastinfoupdatenow.weebly.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://security-server-static-page--raymondhug.replit.app/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+http://comcastmemberupdate.weebly.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://xfinitymemberinfo.weebly.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://lunar-marble-dust.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://garden-copper.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://awarenesss.cfd/Claim/Document/response/docusignportal.html,phishing,90,Safe,False,False,True,True,True,ssl_certificate;domain_age
+https://s4w.in/roblox-com-users-3810290876-profile,phishing,90,Safe,False,False,True,True,False,redirect_check
+http://www.shorten.tv/ucFtO/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://shivanshguptx.github.io/Spotify_Clone/,phishing,70,Low Risk,False,False,True,True,True,typosquatting
+https://www.shopee0146.blogspot.com/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.verification-blueticks-fb13.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.undiangebyar-shopee0055.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.undianshopeeday2020.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.shopee--brands10-10.blogspot.com/,phishing,72,Low Risk,False,False,True,True,False,ssl_certificate;special_characters
+http://www.shopee-grandprize-2022.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.ramadhan-shop27.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.infopemenang097.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.infoundianshopee9.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://www.infohadiah-jkt225.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.bombastis7-7.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://internet-explorer-11.soft-base.pro/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+https://formulariodelbdveninea.github.io/studious-computing-machine,phishing,70,Low Risk,False,False,True,True,True,typosquatting
+https://fortmax.live/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://www.roblox.com.bi/games/126067936733239/UPD-Anime-Card-Tycoon?privateServerLinkCode=81776722292163318798431500962836&game_id=126067936733239&game_name=UPD-Anime-Card-Tycoon,phishing,85,Low Risk,False,False,True,True,True,url_length
+https://www.roblox.com.bi/games/85580552562948/Anime-Powerscaling-Card-Collection?privateServerLinkCode=81776722292163318798431500962836&game_id=85580552562948&game_name=Anime-Powerscaling-Card-Collection,phishing,85,Low Risk,False,False,True,True,True,url_length
+https://live-dwnlod-ledger.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://summoners-ledger.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+http://comcast-ebon.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://snowy-pond-b047.cqadttixs.workers.dev/facebook.com-1027275509,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://estate-ledger-varada-staging.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://ladgerstart.gitbook.io/us,phishing,100,Safe,False,False,True,True,True,
+http://ladgerstart.gitbook.io/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://forrestchase.gztxyy.com/?naps,phishing,100,Safe,False,False,True,True,False,
+https://upholdlogeiin.gitbook.io/us,phishing,100,Safe,False,False,True,True,True,
+http://upholdlogeiin.gitbook.io/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://securevmrecording.reocksdede.de/,phishing,79,Low Risk,False,False,True,True,True,https_check;suspicious_keywords
+https://rep-ledger.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://security-server-landing-page--retrobob.replit.app/?naps,phishing,92,Safe,False,False,True,True,False,special_characters
+http://way2drive.in/admin/web/authen.php/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+https://cp-trc.marinenexus.info/ga/click/2-48752265-218-430-854-458-3e2832923d-0fed0bee1d,phishing,77,Low Risk,False,False,True,True,False,url_length;domain_age
+https://flashfreight.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+http://login-xfinityweb.weebly.com/,phishing,79,Low Risk,False,False,True,True,True,https_check;suspicious_keywords
+http://infohadiah-jkt225.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://xfinity-555.weebly.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://xfinity-555.weeblysite.com/,phishing,100,Safe,False,False,True,True,False,
+https://www.roblox.com.bi/communities/839193269369/One-Time-YT,phishing,100,Safe,False,False,True,True,True,
+https://paycore-bup-process.sbs/viewer/bWlsbGVubml1bQ/Ml8w/94BG6ZqQ24,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://desktop.core-whatapps.com/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://cx3liveo.sviluppo.host/sessLSK/StrJ9/oev3/ATstr/,phishing,90,Safe,False,False,True,True,False,redirect_check
+http://bombastis7-7.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://shopee--brands10-10.blogspot.com/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+http://www.ledgarapp.onlinedocsfilesreport.com/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+http://shopee-grandprize-2022.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://ramadhan-shop27.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://infopemenang097.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://infoundianshopee9.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://undianshopeeday2020.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://undiangebyar-shopee0055.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.88midyearsale.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.hadiah-shopee179.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://www.daftar-hadiah93.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.gebyarsmarkmartcoid.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.brandsfestival1010.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.promo-shopeeday8-8.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://www.layananpemenang58.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.hadiah-shopeeday.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.granzprizeshopee77.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://www.layanan-pemenang37.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.berkahmidyear88.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+http://www.undian-shopee434.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.shopeesalemidyear.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.shopee-hadiah78.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.pemenangbirthdaysale12.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.pemenangbitrhdaysale12-12.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.undian-shopee1177.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://www.bigsale-15m.blogspot.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://smmrgv.vercel.app/?e=renal2@812ece31d196adcefcdc283810b9a3fc861a.com,phishing,92,Safe,False,False,True,True,False,url_length
+https://www.shopee1218.blogspot.com/,phishing,70,Low Risk,False,False,True,True,True,ssl_certificate;redirect_check
+http://bigsale-15m.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://granzprizeshopee77.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://endeveteasetsxmimgqiye.vercel.app/?websrc=IY9V0GCe4MxNvN4Hg54b1ew3g5CCOQ5Gsn7X2NB5weTvz13fsHXCa063u7808r2FnroIcFbJ6VsqKZz98pzsGsLgaECnTDxBej5cE870j4nzzDoKsKdN17kj3Js56zj8GFHA,phishing,85,Low Risk,False,False,True,True,True,url_length
+https://pay-com.blogspot.com/,phishing,100,Safe,False,False,True,True,True,
+https://www.pay-com.blogspot.com/,phishing,70,Low Risk,False,False,True,True,True,ssl_certificate;redirect_check
+https://unusual-fuchsia-g9xbcd86.edgeone.dev/,phishing,100,Safe,False,False,True,True,True,
+http://signintoxfinitycomcast.weebly.com/,phishing,79,Low Risk,False,False,True,True,True,https_check;suspicious_keywords
+https://facebook-visitantes.blogspot.com/?m=1,phishing,100,Safe,False,False,True,True,False,
+https://www.facebook-visitantes.blogspot.com/?m=1,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.sundaeshower.com/m/user/orderList/,phishing,70,Low Risk,False,False,True,True,False,https_check;domain_age
+https://im.nbpublic.com/facebook/facebook-security-scan-multilang.html?lptoken=17b989e7546b225a506e&cep=N4Igdgpg7g+gFgSwC4wQExALhABgmtAZgBYc0BaAMwGN9ziAOAdkPIEMGBWANnIE5qAIwCMbNMTQQm3BiAA0IAG4IAzslQZsfDjm4AmHNXKEc2+sWrFyDPWjbluTPcIbVK3YcT5N5S1eqQEAFsIFSQ2IIAHLBADPV5TcmFuABVdTBJMYRwAOhtCAC1fCAAPJAgAJzA2ABsNGOAAAQQwSgB7HOoahGoAa3RGgF9fZTUkNor67D0Z5jdKKmE+CHo0BkF2LhXiNkIIPj1CfLZBX2oIyLYEAHMwKZBuNj4+Yj02TmIRFk4cHGE3hiEag4Si+MBtST3HAwPRgiEQGBIACekQgMQAMmwwGgWtc4ZDqHArmAsABtXAwkAAXQUkQqoQgNQg1HKaBg4MkWFAyNRGKxOLAeIU4Qq1wgKHQMUeTGI+i8gkEDAYu1+/wOlkEfHxCMl2GhsIUkDKXJAPLR2AA8pRKJVfCKxRLNA9duccJxBNRhGgcFxVc5CIQ9MrtVCYNCcAAfaHCMNRmFhsGlJBYMAAVxqNUGgwUhOJMEibTGCDaJMwoGoqYq9LASAAcvCAJLY0pYHAKQQVLGEps42gqMlU7MgVQwek4+ksrBICqpiAKACOKmiZZAYkUMHOUSut3uwDEG4uGmGCjXMDa1squ7XVptFQbaGPq+tCG6bHKu+arQ6KlTgg3RLASAaiGXx+QqNp0F3SRFHvR8wIgtlIKCNBOAaaD7wAWRQx8uh6XoPxadpOm6PoBhw+k3wQRQdSdYBqAowJqNgs4GKohFqhCBp6IgSjqNrCIIEfa4rlo4T0CEkSYGQ1DsGAMS0CwzhH3QSg2AaFS2GUtBVKklD1O0thFOUkIEHUkzjIgBBdJkkBgGCSyjN8II2GoBpnOoR93OstyXMchQ2hEhoAvE3xgrZaSgpEvyQHPW92QEhpPyIzdLhuMAcliy8OIgECFFTNTZPyx9U1TXVbKSjoUu3dLspAocR0gKAsFUmoVEEoA&cpid=6a9942a54b17350012a83c0f,phishing,85,Low Risk,False,False,True,True,False,url_length
+http://33333333-8r7.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://colibridistribuidora.com.br/rkt/,phishing,100,Safe,False,False,True,True,True,
+https://hadiah-shopee433.blogspot.com/?m=1,phishing,100,Safe,False,False,True,True,False,
+https://welcome-ivory-mla3tpma-dpgbipy9x8sc.edgeone.dev/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://up-holdlogen.gitbook.io/us,phishing,100,Safe,False,False,True,True,True,
+http://up-holdlogen.gitbook.io/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://https-wwwv-roblox.co/users/22562232/profile,phishing,100,Safe,False,False,True,True,True,
+https://zurai02.github.io/Roblox,phishing,60,Suspicious,True,False,False,True,True,typosquatting;redirect_check
+https://algerienquestion.github.io/instagram,phishing,70,Low Risk,False,False,True,True,True,typosquatting
+https://zurai02.is-a.dev/Roblox/,phishing,100,Safe,False,False,True,True,False,
+https://www.facebook.meweb.kz/,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate
+https://prlmevldeo.com/blog/blog.php,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://prlmevldeo.com/pages/i1.php,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://d1jemqk05k0kst.cloudfront.net/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://overhaullrealtor.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://courierguyfst.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+http://www.tinyurl.com/nja872xf/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.new-click-app-99.surge.sh/,phishing,70,Low Risk,False,False,True,True,True,ssl_certificate;redirect_check
+https://en-en-kraken.com.en-domain.com/,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+https://now-support.com/pages/ban.php,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+http://www.lnk.ua/yzc8ROcvH/,phishing,75,Low Risk,False,False,True,True,False,https_check;redirect_check
+http://laissetoiallez.xyz/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://now-support.com/,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+https://www.11st.evergreenfin.ltd/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://le-registre-societes-francaises.fr/verification/07L34R...,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://www.12306.evergreenfin.ltd/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://www.autenticartcuent2pasos.iceiy.com/,phishing,80,Low Risk,False,False,True,True,False,ssl_certificate
+https://ep-au-tsirdg6k8303-c6hnc0e8dbbubred.z02.azurefd.net/Win20Errfb020/index.html,phishing,92,Safe,False,False,True,True,False,url_length
+http://zooom09.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://cloud-abdd.americanarmy490.workers.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://crisp-wood.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://daisy-yard-garden.pages.dev/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://daftar-hadiah93.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.ivanaalldayfansibaghi.blogspot.com/?m=1,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://berkahmidyear88.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://gebyarsmarkmartcoid.blogspot.com/,phishing,100,Safe,False,False,True,True,False,
+http://88midyearsale.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://shopeesalemidyear.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://shopee1218.blogspot.com/?m=1,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://brandsfestival1010.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://facebooklogin-page.blogspot.com/?m=1,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.facebooklogin-page.blogspot.com/?m=1,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://mintpass-05.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://eu-assets.contentstack.com/v3/assets/blt006917f377bafe00/blt71defda48529949c/6aa936fedd22c91e4ad899be/halaalldomain26.html,phishing,85,Low Risk,False,False,True,True,False,url_length
+http://shopee-hadiah78.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://undian-shopee434.blogspot.com/,phishing,100,Safe,False,False,True,True,False,
+https://promo-shopeeday8-8.blogspot.com/,phishing,100,Safe,False,False,True,True,False,
+http://hadiah-shopeeday.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://way2drive.in/,phishing,95,Safe,False,False,True,True,False,domain_age
+http://pemenangbirthdaysale12.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://a9ecc2650b8a.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://undian-shopee1177.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://layananpemenang58.blogspot.com/?m=1,phishing,100,Safe,False,False,True,True,False,
+http://pemenangbitrhdaysale12-12.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://layanan-pemenang37.blogspot.com/?m=1,phishing,100,Safe,False,False,True,True,False,
+http://hadiah-shopee179.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://netflix-login.blogspot.com/2017/03/netflix-recommended-televisions-with.html,phishing,86,Low Risk,False,False,True,True,False,url_length;suspicious_keywords
+https://www.infopemenang-shopee39.blogspot.com/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+https://netflix-login.blogspot.com/2017/03/,phishing,94,Safe,False,False,True,True,False,suspicious_keywords
+https://cm191423.tw1.ru/app.ar24.fr,phishing,100,Safe,False,False,True,True,True,
+http://ck200009.tw1.ru/daeopi/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://berkshire-hathavvay.club/?originalPath=/,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+http://byit.support/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://freshbeer.co.nz/one/index.php,phishing,100,Safe,False,False,True,True,True,
+https://pagebloompublishers.com/authiew,phishing,95,Safe,False,False,True,True,False,domain_age
+https://infopemenang-shopee39.blogspot.com/,phishing,100,Safe,False,False,True,True,False,
+http://lumetraxa.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://cyberdnshost.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://vianamega.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://daylian.com/,phishing,90,Safe,False,False,True,True,False,redirect_check
+https://www.info-resmi-24.blogspot.com/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://security-server-landing-page--aghnakazmi.replit.app/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+http://www.netflix-clone-delta-ruby.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.netflix-clone-tau-livid.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.meta-verified-blueticks-fb3.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+https://summarjax.com/,phishing,85,Low Risk,False,False,True,True,False,domain_age;redirect_check
+http://www.dewarinsurnace.com/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+http://www.moregoonsrue.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://www.juopsia.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+https://www.ebay-phone-number.blogspot.com/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.atatmyaccount.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.we-tranfer-fdownload.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.infoundianshopee5.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.netflix-clone-omega-ruby.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.netflix-ui-two.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.gestionempresarialdanier.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.fb-meta-verified-3658-tau.vercel.app/,phishing,62,Suspicious,True,False,False,True,False,ssl_certificate;special_characters;redirect_check
+https://www.netflix-clone-pink-three.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.cs059615.tw1.ru/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.paslanta.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+https://www.bonuceu.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+http://www.123greenwichstreet.com/,phishing,80,Low Risk,False,False,True,True,True,https_check;domain_age
+https://hummerbean.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://www.zbibidan.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://www.form-1lx3.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://auspost.addqwe.com/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://roaring-puffpuff-410de4.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://prueba-tecnica-mercadolibre-git-main-purplenoah7s-projects.vercel.app/,phishing,84,Low Risk,False,False,True,True,False,url_length;special_characters
+https://3dmodelrobloksstudio.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://mellifluous-alpaca-42e5c4.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://lucent-profiterole-837e70.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+http://sp30ct-qorek-biz-zemad-vunik.pages.dev/,phishing,77,Low Risk,False,False,True,True,True,https_check;special_characters
+https://aktivasi-hadiah-anda-sekarang.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://kkruccoiunss-login.webflow.io/,phishing,94,Safe,False,False,True,True,True,suspicious_keywords
+https://zimbrapatrikaclient.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+http://zb1414.craftum.io/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://quixisinal.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://quantelomesh.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://www.roblox.com.mu/users/6058818144/profile,phishing,100,Safe,False,False,True,True,False,
+https://s4w.in/roblox-com-users-7136452943-profile,phishing,90,Safe,False,False,True,True,False,redirect_check
+https://https-wwwv-roblox.co/users/37090853/profileAlternative,phishing,100,Safe,False,False,True,True,True,
+https://www.en-en-kraken.com.en-domain.com/,phishing,72,Low Risk,False,False,True,True,True,ssl_certificate;subdomains;domain_age
+https://to.lk/KcyNPA,phishing,90,Safe,False,False,True,True,True,redirect_check
+https://www.roblox.com.do/users/383212427167/profile,phishing,100,Safe,False,False,True,True,True,
+http://facebookloginapp.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://ditzzz.ezzzyy.de/,phishing,100,Safe,False,False,True,True,True,
+http://multistore-lb.com/docsign/page.html?sid=F0PL3FsxkyaF2mDhwzhoRpREoaBbB0i0etEXFZjSHMaW7hRwIvPHVCUnvCDNMSzGfERwxn0ir6aaCvLynjUDWagAVRA4KKE2Ef8imvghqdrNsJ8FFsKMcqikEdU,phishing,65,Suspicious,True,False,False,True,False,url_length;https_check;domain_age
+https://www.roblox.com.pt/games/89469502395769/Kick-a-Lucky-Block?privateServerLinkCode=99382535900423182128231632453729,phishing,85,Low Risk,False,False,True,True,True,url_length
+https://jetjeffersons.com/veg,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://sp30ct-nurek-biz-zavim-qelad.pages.dev/,phishing,92,Safe,False,False,True,True,False,special_characters
+http://online-facebook-privacy.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://www.online-facebook-privacy.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://tr.extrabetplatform.icu/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://sphereofculture.com/indnx.html,phishing,100,Safe,False,False,True,True,False,
+https://historic-lime-ooqxdqeq.edgeone.dev/home,phishing,95,Safe,False,False,True,True,False,domain_age
+https://www.roblox.com.mu/users/1129781960/profile,phishing,100,Safe,False,False,True,True,False,
+http://www.shopeejkt4782.blogspot.com/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://myapple.services/isignesp.php,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+https://vodafoneelevation.de/berlin/e,phishing,100,Safe,False,False,True,True,True,
+https://www.roblox.com.hr/users/4646669796/profile,phishing,100,Safe,False,False,True,True,True,
+https://info-resmi-24.blogspot.com/,phishing,100,Safe,False,False,True,True,False,
+https://light.s-drc2.cloud.gcore.lu/newhot26.html,phishing,92,Safe,False,False,True,True,True,subdomains
+http://isoportegps-lcloud.pro/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://icloudxtzsopoe.click/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://iclouddsoporteapple.click/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://www.roblox.ly/users/8846667492/profile,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://salviidraulico.it/wp-includes/theme-compat/shwpebc/ksgxuvc/povrusy/phpaccess.html?eta%5C=ravik@8051e9cdaa76203a8c222e3257119824db9f.net,phishing,85,Low Risk,False,False,True,True,True,url_length
+https://www.roblox.com.ml/users/407409532364/profile,phishing,100,Safe,False,False,True,True,False,
+https://8r5p6e-qw999agreg-2p1z9k8m4s-7m8p.pages.dev/,phishing,100,Safe,False,False,True,True,False,
+https://www.roblox.com.bi/users/680395498475/profile,phishing,100,Safe,False,False,True,True,True,
+http://norquiva83.pro/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://zavrovia32.pro/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://discord-web.com/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://roblox.com.do/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.roblox.com.hr/users/1797867404/profile,phishing,100,Safe,False,False,True,True,True,
+https://tinyurl.com/2sz93wb2,phishing,90,Safe,False,False,True,True,False,redirect_check
+http://fmi-recovery-ld.help/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://kusumupraity9.github.io/ipop2,phishing,70,Low Risk,False,False,True,True,True,typosquatting
+https://santander-remaster-whats-fb.vercel.app/,phishing,100,Safe,False,False,True,True,False,
+https://gps-icloudsupport.pro/isignesp.php,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://redemption.officiall-events.com/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://barenakedpetone.onebarenakedpet.com/,phishing,95,Safe,False,False,True,True,False,domain_age
+http://fmidevice-location.com.tr/isignesp.php,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.facebook-profile-login.blogspot.com/,phishing,64,Suspicious,True,False,False,True,False,ssl_certificate;suspicious_keywords;redirect_check
+https://fmi-recovery.live/isignesp.php,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://soportegps-ios.com/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+http://applogincloude.life/isignesp.php,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://birukkapp.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://saml2.evergreenfin.ltd/,phishing,95,Safe,False,False,True,True,False,domain_age
+https://app-encontrarid.click/isignesp.php,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+https://fr-spotify.com/683gds/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://fr-spotify.com/683gds/recaptcha-verify.php,phishing,79,Low Risk,False,False,True,True,False,suspicious_keywords;domain_age
+https://sgspotifyclone.netlify.app/,phishing,100,Safe,False,False,True,True,False,
+https://lnk.ink/Scanning.pixiv,phishing,85,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://booking.reserva-id91240.com/1420446244,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://booking.hostel-id92373.com/270398024,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://booking.hotelconfirm-hostis.com/655064829,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://gate-43985.com/276663615,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://bookingdirect.paymentarrival.com/1840481803,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://bookingdirect.paymentarrival.com/418256678/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://gate-43985.com/215722421,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://booking.ampergohoms.com/736988771/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://id86542866.com/230277223,phishing,85,Low Risk,False,False,True,True,False,domain_age
+http://www.atlas-tan-seven.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://reservationupdate.com/3dsecure/,phishing,70,Low Risk,False,False,True,True,True,https_check;domain_age
+https://zbibidan.vercel.app/,phishing,100,Safe,False,False,True,True,False,
+https://redtasf.vercel.app/,phishing,100,Safe,False,False,True,True,False,
+http://www.raiffeisen-gilt.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://www.raiffeisen-swsf.vercel.app/,phishing,70,Low Risk,False,False,True,True,False,ssl_certificate;redirect_check
+http://paslanta.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://pasantha.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://raiffeisen-swsf.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+http://hwidanzban.vercel.app/,phishing,85,Low Risk,False,False,True,True,True,https_check
+https://rxder.com/happy),phishing,95,Safe,False,False,True,True,False,domain_age
+https://vianamega.com/see/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://msteamsinvitees.com/invitation,phishing,80,Low Risk,False,False,True,True,True,ssl_certificate;domain_age
+https://quantelomesh.com/print/,phishing,85,Low Risk,False,False,True,True,False,domain_age
+https://www.momentformeu.com/,phishing,75,Low Risk,False,False,True,True,False,domain_age;redirect_check
+https://github.io,legitimate,60,Suspicious,True,False,True,False,True,typosquatting;redirect_check
+https://adobe.io,legitimate,60,Suspicious,True,False,True,False,True,typosquatting;redirect_check

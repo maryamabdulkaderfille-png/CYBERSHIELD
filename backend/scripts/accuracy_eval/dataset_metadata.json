@@ -1,0 +1,12 @@
+{
+  "built_at_utc": "2026-09-16T15:23:56.739350+00:00",
+  "phishing_source": "OpenPhish free community feed",
+  "phishing_source_url": "https://openphish.com/feed.txt",
+  "phishing_count": 300,
+  "phishing_source_note": "PhishTank's public feed (the source originally specified) was found to be unreliably rate-limited during development \u2014 one request returned real data, the next returned a CloudFront placeholder image instead of JSON. OpenPhish was substituted: no API key needed, verified stable, and already cited in this thesis's Chapter 2 literature review.",
+  "legitimate_source": "Tranco top sites list",
+  "legitimate_source_url": "https://tranco-list.eu/top-1m.csv.zip",
+  "legitimate_count": 250,
+  "legitimate_source_note": "Tranco publishes a new dated list daily; this dataset used whatever list was current as of built_at_utc above. Cite Tranco with the date this was built, consistent with Tranco's own citation guidance for research use.",
+  "total_count": 550
+}

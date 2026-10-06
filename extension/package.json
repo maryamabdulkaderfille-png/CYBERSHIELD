@@ -1,0 +1,14 @@
+{
+  "name": "cybershield-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test tooling for the CyberShield browser extension. The extension itself ships as plain, unbundled JS/HTML/CSS — this package.json exists only to run its test suite, not to build it.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "vitest": "^1.6.0"
+  }
+}
