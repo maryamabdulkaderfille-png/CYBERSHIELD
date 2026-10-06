@@ -4,8 +4,8 @@ services:
     env: python
     plan: free
     rootDir: backend
-    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
-    startCommand: gunicorn wsgi:app
+    buildCommand: pip install --upgrade pip && pip install psycopg2-binary && pip install -r requirements.txt
+    startCommand: flask db upgrade && gunicorn wsgi:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
