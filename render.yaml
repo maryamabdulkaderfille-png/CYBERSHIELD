@@ -2,6 +2,7 @@ services:
   - type: web
     name: cybershield-backend
     env: python
+    plan: free
     rootDir: backend
     buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: gunicorn wsgi:app
