@@ -37,8 +37,8 @@ class Config:
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=15)
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=7)
 
-    FRONTEND_ORIGIN = os.environ.get("FRONTEND_ORIGIN", "http://localhost:5173")
-    FRONTEND_BASE_URL = os.environ.get("FRONTEND_BASE_URL", FRONTEND_ORIGIN)
+    FRONTEND_ORIGIN = os.environ.get("FRONTEND_ORIGIN", "http://localhost:5173").strip()
+    FRONTEND_BASE_URL = os.environ.get("FRONTEND_BASE_URL", FRONTEND_ORIGIN).strip()
 
     # Phase 6: the browser extension calls this same API from a
     # chrome-extension://<id> / moz-extension://<id> origin using the same
@@ -52,10 +52,8 @@ class Config:
 
     RATELIMIT_STORAGE_URI = os.environ.get("RATELIMIT_STORAGE_URI", "memory://")
 
-    # Off by default: only enable behind a reverse proxy/load balancer you
-    # control, so it can't be used to spoof the client IP that rate limiting
-    # and audit logging key off of (see app.__init__._apply_proxy_fix).
-    TRUST_PROXY_HEADERS = _bool_env("TRUST_PROXY_HEADERS", False)
+    # Enable behind Railway/reverse proxy in production
+    TRUST_PROXY_HEADERS = _bool_env("TRUST_PROXY_HEADERS", os.environ.get("FLASK_ENV") == "production")
 
     PASSWORD_RESET_TOKEN_TTL_MINUTES = int(os.environ.get("PASSWORD_RESET_TOKEN_TTL_MINUTES", "30"))
     EMAIL_VERIFICATION_TOKEN_TTL_HOURS = int(os.environ.get("EMAIL_VERIFICATION_TOKEN_TTL_HOURS", "24"))

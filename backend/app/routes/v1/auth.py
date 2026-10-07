@@ -213,7 +213,8 @@ def google_login():
         raise APIError("Google Sign-In is not configured on this server.", 501)
     # auth_bp is nested inside api_v1_bp (see routes/v1/__init__.py), so the
     # endpoint's full dotted name includes that parent blueprint's name too.
-    redirect_uri = url_for("api_v1.auth.google_callback", _external=True)
+    scheme = "https" if (request.is_secure or request.headers.get("X-Forwarded-Proto") == "https" or current_app.config.get("FLASK_ENV") == "production") else "http"
+    redirect_uri = url_for("api_v1.auth.google_callback", _external=True, _scheme=scheme)
     return oauth.google.authorize_redirect(redirect_uri)
 
 
