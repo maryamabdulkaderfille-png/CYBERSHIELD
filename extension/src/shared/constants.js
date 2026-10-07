@@ -43,8 +43,8 @@
     // second hardcoded copy of the thresholds.
     dangerThreshold: 39,
     theme: "system",
-    apiBaseUrl: "http://localhost:5000/api/v1",
-    dashboardBaseUrl: "http://localhost:5173",
+    apiBaseUrl: "https://cybershield-production-7872.up.railway.app/api/v1",
+    dashboardBaseUrl: "https://zestful-fulfillment-production-b2ac.up.railway.app",
     privacyMode: false,
     statisticsCollection: true,
   };
