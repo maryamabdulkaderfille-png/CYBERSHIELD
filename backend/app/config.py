@@ -32,8 +32,8 @@ class Config:
     JWT_ACCESS_COOKIE_PATH = "/api/v1/"
     JWT_REFRESH_COOKIE_PATH = "/api/v1/auth/refresh"
     JWT_COOKIE_SECURE = _bool_env("JWT_COOKIE_SECURE", True)
-    JWT_COOKIE_SAMESITE = "Lax"
-    JWT_COOKIE_CSRF_PROTECT = True
+    JWT_COOKIE_SAMESITE = os.environ.get("JWT_COOKIE_SAMESITE", "None" if os.environ.get("FLASK_ENV") == "production" else "Lax")
+    JWT_COOKIE_CSRF_PROTECT = _bool_env("JWT_COOKIE_CSRF_PROTECT", False if os.environ.get("FLASK_ENV") == "production" else True)
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=15)
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=7)
 
