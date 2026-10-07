@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Bell, Chrome, Gauge, ShieldAlert } from "lucide-react";
+import { Bell, Chrome, Download, Gauge, HelpCircle, ShieldAlert } from "lucide-react";
 
 const EXTENSION_FEATURES = [
   { icon: ShieldAlert, text: "Full-page warning before you land on a dangerous site" },
@@ -8,6 +9,7 @@ const EXTENSION_FEATURES = [
 ];
 
 export function ExtensionShowcaseSection() {
+  const [showInstallGuide, setShowInstallGuide] = useState(false);
   return (
     <section id="extension" className="mx-auto max-w-7xl px-6 py-20">
       <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -36,6 +38,40 @@ export function ExtensionShowcaseSection() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href="/cybershield-extension.zip"
+              download="cybershield-extension.zip"
+              className="btn-primary inline-flex items-center gap-2 px-5 py-3 text-sm"
+            >
+              <Download size={16} />
+              Download Extension (ZIP)
+            </a>
+            <button
+              type="button"
+              onClick={() => setShowInstallGuide((prev) => !prev)}
+              className="inline-flex items-center gap-1.5 text-xs text-brand-cyan hover:underline"
+            >
+              <HelpCircle size={14} />
+              How to install in Chrome / Edge
+            </button>
+          </div>
+
+          {showInstallGuide && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-4 rounded-xl border border-white/10 bg-navy-900/80 p-4 text-xs text-slate-300"
+            >
+              <p className="font-semibold text-slate-100">Simple 3-step installation:</p>
+              <ol className="mt-2 list-decimal space-y-1.5 pl-4 text-slate-400">
+                <li>Download and extract (unzip) <code className="text-brand-cyan">cybershield-extension.zip</code>.</li>
+                <li>In Chrome or Edge, visit <code className="text-brand-cyan">chrome://extensions</code> and enable <strong>Developer mode</strong> (top right).</li>
+                <li>Click <strong>Load unpacked</strong> and select the extracted folder.</li>
+              </ol>
+            </motion.div>
+          )}
         </motion.div>
 
         <motion.div
