@@ -6,7 +6,7 @@ const MUTATING_METHODS = new Set(["post", "put", "patch", "delete"]);
 const CSRF_EXEMPT_PATHS = ["/auth/login", "/auth/register", "/auth/refresh", "/guest/"];
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://cybershield-production-7872.up.railway.app/api/v1",
   withCredentials: true,
   // Without this, a stalled request never settles its Promise at all — no
   // .then, no .catch, no .finally — so a page whose loading state depends

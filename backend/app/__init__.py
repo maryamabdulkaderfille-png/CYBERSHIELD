@@ -68,7 +68,13 @@ def _init_extensions(app: Flask) -> None:
     bcrypt.init_app(app)
     jwt.init_app(app)
     limiter.init_app(app)
-    allowed_origins = [app.config["FRONTEND_ORIGIN"], *app.config["EXTENSION_ORIGINS"]]
+    import re
+
+    allowed_origins = [
+        re.compile(r"^https://.*\.up\.railway\.app$"),
+        app.config["FRONTEND_ORIGIN"],
+        *app.config["EXTENSION_ORIGINS"],
+    ]
     cors.init_app(
         app,
         resources={r"/api/*": {"origins": allowed_origins}},

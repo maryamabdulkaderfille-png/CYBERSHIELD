@@ -5,7 +5,8 @@
  * tokens rather than Google's default branded button.
  */
 export function GoogleSignInButton({ label }: { label: string }) {
-  const href = `${import.meta.env.VITE_API_BASE_URL}/auth/google/login`;
+  const baseUrl = import.meta.env.VITE_API_BASE_URL || "https://cybershield-production-7872.up.railway.app/api/v1";
+  const href = `${baseUrl}/auth/google/login`;
 
   return (
     <a href={href} className="btn-secondary w-full py-3">
