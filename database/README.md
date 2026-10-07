@@ -1,19 +1,27 @@
-# CyberShield Database Backup
+# CyberShield Database
 
-This directory contains the complete PostgreSQL database backup for **CyberShield**, including:
-- All schema migrations and table structures (`users`, `scan_history`, `email_scan_history`, `qr_scan_history`, `blacklist_entries`, `detection_rules`, `audit_logs`, etc.)
-- Seed users (including Admin and standard users)
-- Threat intelligence, sample scans, and pre-configured blacklist entries
+This directory contains the complete database scripts and backups for **CyberShield**.
 
-## Restore Instructions
+## 1. Microsoft SQL Server (SSMS)
+- **Database Script:** `cybershield_mssql.sql`
+- **Database Name:** `CyberShieldDB`
+- **Management Tool:** SQL Server Management Studio (SSMS)
+- **Connection String (SQLAlchemy):**
+  ```env
+  DATABASE_URL=mssql+pyodbc://localhost/CyberShieldDB?driver=ODBC+Driver+18+for+SQL+Server&trusted_connection=yes&TrustServerCertificate=yes
+  ```
 
-### Option 1: Using Docker Compose
-If running PostgreSQL via Docker:
-```bash
-docker exec -i cybershield-postgres-1 psql -U cybershield -d cybershield < database/cybershield_backup.sql
-```
+### How to Open / Restore in SSMS:
+1. Open **SQL Server Management Studio (SSMS)**.
+2. Connect to your local SQL Server instance (`localhost` or `.\SQLEXPRESS`).
+3. Open `cybershield_mssql.sql` (`File -> Open -> File`).
+4. Click **Execute (F5)** to create and populate `CyberShieldDB`.
 
-### Option 2: Using local PostgreSQL (psql)
-```bash
-psql -U cybershield -d cybershield -f database/cybershield_backup.sql
-```
+---
+
+## 2. PostgreSQL Backup (Alternative)
+- **Backup File:** `cybershield_backup.sql`
+- Can be restored using:
+  ```bash
+  psql -U cybershield -d cybershield -f database/cybershield_backup.sql
+  ```
