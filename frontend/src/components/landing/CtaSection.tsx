@@ -25,7 +25,7 @@ export function CtaSection({ isAuthenticated }: CtaSectionProps) {
           playsInline
           preload="none"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-          src="/3129902-uhd_3840_2160_25fps.mp4"
+          src="/8733055-uhd_3840_2160_30fps.mp4"
         />
         {/* Darkens the globe video so it reads as a "worldwide protection"
             backdrop for the closing card, matching the same overlay
