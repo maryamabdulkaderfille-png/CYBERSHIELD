@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "(git lfs pull || true) && tsc -b && vite build",
     "preview": "vite preview",
+    "start": "vite preview --host 0.0.0.0 --port ${PORT:-5173}",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

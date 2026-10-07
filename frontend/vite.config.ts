@@ -18,4 +18,8 @@ export default defineConfig({
       interval: 300,
     },
   },
+  preview: {
+    host: true,
+    allowedHosts: true,
+  },
 });
